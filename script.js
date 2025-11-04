@@ -52,3 +52,8 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   alert("Thank you for your message! I’ll get back to you soon.");
   this.reset();
 });
+// Hero entrance animation on page load
+window.addEventListener("load", () => {
+  const heroElements = document.querySelectorAll(".hero-animate");
+  heroElements.forEach(el => el.classList.add("show"));
+});

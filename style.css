@@ -229,3 +229,26 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+.hero-animate {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero-animate.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.hero-animate.delay-200 {
+  transition-delay: 0.2s;
+}
+.hero-animate.delay-400 {
+  transition-delay: 0.4s;
+}
+.hero-animate.delay-600 {
+  transition-delay: 0.6s;
+}
+.hero-animate.delay-800 {
+  transition-delay: 0.8s;
+}
